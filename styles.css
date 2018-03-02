@@ -13,6 +13,43 @@
 	padding: 10px;
 }
 
-.thead-light {
-	background-color: #F1F1F1;
+h2 {
+	color: #ff7504;
+}
+
+.qualiflyHead {
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+
+#loading {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.resultbox {
+	text-align: center;
+	margin-top: 40px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.resultbox p {
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#green {
+	background: #33cc00;
+}
+
+#yellow {
+	background: yellow;
+}
+
+#red {
+	background: red;
 }
