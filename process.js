@@ -5,7 +5,7 @@ $(document).ready(function() {
 		setTimeout(function(){
 			$("#results").show();
 			$("#loading").hide();
-		},500);
+		},1000);
 
 
 		var firstName = $("#fn").val();
@@ -15,9 +15,17 @@ $(document).ready(function() {
 		var state = $("#state option:selected").text();
 		var city = $("#city").val();
 		var zipCode = $("#zip").val();
+		var color = resultBox();
 
 		$("#resultinfo").html("Results For: " + firstName + " " + lastName + "<br>Customer Lookup #: " + customerLookupNumber())
-		$("#"+resultBox()).show();
+		
+		if (color == "red") {
+			$("#"+color).show();
+		}
+		else {
+			$("#"+color).show();
+			$("#"+color).after("<div style='padding-top:10px;'><a href=''>Complete</a></div>")
+		}
 		
 	})
 });
@@ -41,6 +49,5 @@ function resultBox () {
 	color = colors[randomNum]
 	return color
 }
-
 
 
